@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
   </head>
+
   <body>
     <div class="container-fluid">
       <nav class="d-flex align-items-center justify-content-between gap-4 my-3">
@@ -55,18 +56,20 @@
     </section>
 
     <!-- Cards -->
+    <!-- Gradient used for background of card:
+      #561496, #14142b -->
     <section>
       <div class="container">
-        <div class="card w-50">
+        <div class="card w-50 pb-5 bg-info text-dark">
           <div class="card-1">
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-center">
-                <h3 class="card-title">PF Black Card</h3>
-                <p class="card-subtitle">Best Value</p>
+                <h3 class="card-title fs-2">PF Black Card</h3>
+                <p class="card-subtitle bg-warning p-2 rounded-2">Best Value</p>
               </div>
 
-              <h3>$24.99/mo</h3>
-              <h4 class="">plus taxes & fees</h4>
+              <h3 class="text-primary-emphasis">$24.99/mo</h3>
+              <h4 class="fs-6">plus taxes & fees</h4>
               <i class="fa-regular fa-thumbs-up"></i>
               <p class="d-inline-block">Get the PF Black Card!</p>
 
@@ -105,7 +108,7 @@
               <hr />
 
               <!-- Subsection - What you get -->
-              <div>
+              <div class="d-flex align-items-center justify-content-between">
                 <div class="dropdown">
                   <button
                     class="btn btn-secondary dropdown-toggle"
@@ -117,9 +120,11 @@
                     See Offer Details
                   </button>
 
+                  <!-- Dropdown menu -->
                   <div
                     class="dropdown-menu"
                     aria-labelledby="dropdownMenuButton">
+                    <h4>What You Get:</h4>
                     <a class="dropdown-item" href="#"
                       >Use of Any Planet Fitness Worldwide</a
                     >
@@ -136,6 +141,11 @@
                     <a class="dropdown-item" href="#">50% Off Select Drinks</a>
                   </div>
                 </div>
+
+                <!-- Select button -->
+                <button class="btn btn-primary d-inline" type="button">
+                  Select
+                </button>
               </div>
             </div>
           </div>
